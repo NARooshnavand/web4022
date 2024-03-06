@@ -16,3 +16,11 @@ function myFunction(){
 
     // alert("You clicked on link!")
 }
+const fName = document.getElementById("fName")
+const lName = document.getElementById("lName")
+const form = document.getElementById("form")
+form.addEventListener("submit", (e)=> {
+    e.preventDefault();
+    console.log(`Name: ${fName.value}`)
+    console.log(lName.value)
+} )
