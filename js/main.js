@@ -14,5 +14,5 @@ function myFunction(){
     }
     mybox.style.left = "300px";
 
-    alert("You clicked on link!")
+    // alert("You clicked on link!")
 }
