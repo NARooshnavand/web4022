@@ -6,14 +6,22 @@
     <title>Document</title>
     <script>
       var name;
+      var now = new Date();
+      var hours = now.getHours();
+      console.log(hours);
       name = window.prompt("Please eneter your name");
       document.write("<h1>Welcome " + name + "</h1>");
-      x = "1";
-      if (x === 1) {
-        alert("x=1");
+      if (hours <= 12) {
+        document.write("<h1>Good morning ");
       } else {
-        alert("x!=1");
+        hours = hours - 12;
+        if (hours <= 6) {
+          document.write("<h1>Khaste nabashid ");
+        } else {
+          document.write("<h1>Good eveneing ");
+        }
       }
+      document.write(name + "</h1>");
     </script>
   </head>
   <body></body>
